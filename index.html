@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<body>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+		<link href="jquery-glitch.css" rel="stylesheet">
+		<style>
+			html, body {
+				margin: 0px;
+				padding: 0px;
+				background: #000;
+				color: #fff;
+				font-family: "Open Sans", sans-serif;
+				font-size: 100%;
+				font-weight: bolder;
+				text-transform: uppercase;
+			}
+			h1, h2, h3, h4, h5, h6 {
+				font-size: 600%;
+			}
+			.container {
+				width: 768px;
+				margin: 0px auto;
+			}
+		</style>
+		<div class="container">
+			<div class="glitch">
+				<h1>Lorem ipsum</h1>
+				<p>Vestibulum id ligula porta felis euismod semper. Vestibulum id ligula porta felis euismod semper. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery-glitch.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".glitch").glitch({
+					layers: ["red", "green"],
+					offset: [20, 10],
+				});
+			});
+		</script>
+	</body>
+</html>
+
